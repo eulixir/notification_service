@@ -18,26 +18,12 @@ defmodule Core.DataCase do
 
   using do
     quote do
-      alias Core.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
       import Core.DataCase
     end
-  end
-
-  setup tags do
-    Core.DataCase.setup_sandbox(tags)
-    :ok
-  end
-
-  @doc """
-  Sets up the sandbox based on the test tags.
-  """
-  def setup_sandbox(tags) do
-    pid = Ecto.Adapters.SQL.Sandbox.start_owner!(Core.Repo, shared: not tags[:async])
-    on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
   end
 
   @doc """

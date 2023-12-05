@@ -8,8 +8,6 @@ defmodule Core.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      Core.Repo,
       # Start the PubSub system
       {Phoenix.PubSub, name: Core.PubSub},
       # Start Finch
