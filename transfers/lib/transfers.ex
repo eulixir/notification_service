@@ -1,6 +1,6 @@
-defmodule Pix do
+defmodule Transfers do
   @moduledoc """
-  Documentation for `Pix`.
+  Documentation for `Transfers`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Pix do
 
   ## Examples
 
-      iex> Pix.hello()
+      iex> Transfers.hello()
       :world
 
   """
