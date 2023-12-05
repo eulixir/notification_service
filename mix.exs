@@ -24,7 +24,10 @@ defmodule Core.Umbrella.MixProject do
   # Dependencies listed here are available only for this project
   # and cannot be accessed from applications inside the apps/ folder.
   defp deps do
-    [{:credo, "~> 1.7", only: [:dev, :test], runtime: false}]
+    [
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:broadway_kafka, "~> 0.3"}
+    ]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
