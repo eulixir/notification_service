@@ -30,9 +30,4 @@ defmodule CoreWeb.ConnCase do
       import CoreWeb.ConnCase
     end
   end
-
-  setup tags do
-    Core.DataCase.setup_sandbox(tags)
-    {:ok, conn: Phoenix.ConnTest.build_conn()}
-  end
 end
