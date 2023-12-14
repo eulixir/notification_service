@@ -25,8 +25,7 @@ defmodule Core.Umbrella.MixProject do
   # and cannot be accessed from applications inside the apps/ folder.
   defp deps do
     [
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:broadway_kafka, "~> 0.3"}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 
